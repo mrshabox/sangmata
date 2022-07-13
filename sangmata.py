@@ -43,7 +43,7 @@ dispatcher= updater.dispatcher
 
 
 #############################№##################################№#
-def start(update,context):
+def start(update: Update, context: CallbackContext):
   logg(update.message)
   update.message.reply_text("Forward any message to this chat to see user history.")
 #############################№##################################№#
