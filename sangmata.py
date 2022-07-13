@@ -190,14 +190,14 @@ dispatcher.add_error_handler(error)
 updater.start_webhook(listen="35.230.85.45",
                           port=int(PORT),
                           url_path=TOKEN)
-updater.bot.setWebhook('https://sangmata-production.up.railway.app/' + TOKEN)
+updater.bot.setWebhook('https://samnjjn.herokuapp.com/' + TOKEN)
 updater.start_webhook(listen="35.230.85.45",
 
                       port=PORT,
 
                       url_path=TOKEN,
 
-                      webhook_url="https://sangmata-production.up.railway.app/" + TOKEN)
+                      webhook_url="https://samnjjn.herokuapp.com/" + TOKEN)
 
 updater.idle()
 
