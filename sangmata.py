@@ -190,7 +190,7 @@ dispatcher.add_error_handler(error)
 updater.start_webhook(listen="0.0.0.0",
                           port=PORT,
                           url_path=TOKEN)
-updater.bot.setWebhook('https://samnjjn.herokuapp.com/' + TOKEN)
+updater.bot.setWebhook('https://samnjjn.herokuapp.com/5406307160:AAHBBFIdeJI_Sm_iC4m3tAJ0J0wYcpKW2-E')
 updater.start_webhook(listen="0.0.0.0",
 
                       port=PORT,
