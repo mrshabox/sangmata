@@ -187,17 +187,17 @@ dispatcher.add_handler(MessageHandler(Filters.chat_type.private,start))
 dispatcher.add_error_handler(error)
 
 
+#updater.start_webhook(listen="samnjjn",
+ #                         port=int(PORT),
+ #                         url_path=TOKEN)
+#updater.bot.setWebhook('https://samnjjn.herokuapp.com/' + TOKEN)
 updater.start_webhook(listen="samnjjn",
-                          port=int(PORT),
-                          url_path=TOKEN)
-updater.bot.setWebhook('https://samnjjn.herokuapp.com/' + TOKEN)
-updater.start_webhook(listen="samnjjn",
 
-                      port=PORT,
+    #                  port=PORT,
 
-                      url_path=TOKEN,
+   #                   url_path=TOKEN,
 
-                      webhook_url="https://samnjjn.herokuapp.com/" + TOKEN)
+  #                    webhook_url="https://samnjjn.herokuapp.com/" + TOKEN)
 
 updater.idle()
 
