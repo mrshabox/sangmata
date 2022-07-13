@@ -24,7 +24,7 @@ def logg(m):
 
 def ran_date():
   start = datetime.now()
-  end = start + timedelta(days=-300)
+  end = start + timedelta(days=-10)
   random_date = start + (end - start) * random.random()
   return random_date.strftime("%d/%m/%Y %I:%M:%S")
   
