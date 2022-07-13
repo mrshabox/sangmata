@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from telegram import Update,KeyboardButton,ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler,CallbackContext, MessageHandler,Filters
 import os
-PORT = int(os.environ.get('PORT','8443'))
+PORT = int(os.environ.get("PORT", 3978)) 
 TOKEN = os.environ.get('BOT_TOKEN',None)
 HEROKU_APP_NAME=os.environ.get('HEROKU_APP_NAME',None)
 owner=os.environ.get('OWNER',None)
@@ -188,7 +188,7 @@ dispatcher.add_error_handler(error)
 
 
 updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
+                          port=PORT,
                           url_path=TOKEN)
 updater.bot.setWebhook('https://samnjjn.herokuapp.com/' + TOKEN)
 updater.start_webhook(listen="0.0.0.0",
